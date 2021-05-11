@@ -83,6 +83,9 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
+            else {
+                passView.error = "Wrong password"
+            }
         })
     }
 }

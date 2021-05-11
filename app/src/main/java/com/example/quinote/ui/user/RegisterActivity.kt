@@ -18,6 +18,7 @@ import com.example.quinote.util.PassowrdValidator
 import com.example.quinote.viewmodel.UserViewModel
 import com.example.quinote.viewmodel.UserViewModelFactory
 
+
 class RegisterActivity : AppCompatActivity() {
     private lateinit var emailView: EditText
     private lateinit var passView: EditText
@@ -64,24 +65,26 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         if(!MobileValidator.isValid(mobile)){
-            mobileView.error = "Mobile number should be of 10-digits only"
+            mobileView.error = "Only Indian mobile numbers are allowed"
             return
         }
 
-
+        val liveUserData = userViewModel.getUserByEmail(email)
         val user = User(email, encryptDecrypt.getEncrypted(password), mobile)
-
-        userViewModel.getUserByEmail(email).observe(this, Observer {
-            if(it!=null){
-                Toast.makeText(this, "User with this email already exists", Toast.LENGTH_SHORT).show()
+        val observer: Observer<User> =
+            Observer<User> {
+                if(it!=null){
+                    Toast.makeText(this, "User with this email already exists", Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    userViewModel.insert(user)
+                    Toast.makeText(this, "Registered", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, LoginActivity::class.java)
+                    liveUserData.removeObservers(this)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                }
             }
-            else{
-                userViewModel.insert(user)
-                Toast.makeText(this, "Registered", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, LoginActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(intent)
-            }
-        })
+        liveUserData.observe(this, observer)
     }
 }
