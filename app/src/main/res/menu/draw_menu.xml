@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_main_note"
+            android:icon="@drawable/ic_assignment_icon"
+            android:title="Notes" />
+
+    <!--    <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/ic_backup"
+            android:title="Backup/Restore"
+            /> -->
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+        <item android:id="@+id/nav_sync"
+              android:icon="@drawable/ic_sync"
+              android:title="Sync" />
+
+    <!--    <item android:id="@+id/nav_labels"
+            android:icon="@drawable/ic_label"
+            android:title="Labels" /> -->
+
+    </group>
+
+    <item android:title="Communicate" android:id="@+id/communicate_grp">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" /> -->
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

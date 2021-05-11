@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="backgroundcolor" format="color" />
+        <attr name="textcolor" format="color"/>
+        <attr name="texthintcolor" format="color"/>
+        <attr name="navitemcolor" format="color"/>
+        <attr name="editorcolor" format="color"/>
+        <attr name="appbarcolor" format="color"/>
+        <attr name="uicolor" format="color"/>
+        <attr name="cardcolor" format="color"/>
+        <attr name="reccolor" format="color"/>
+        <attr name="dialogcolor" format="color"/>
+        <attr name="iconcolor" format="color" />
+        <attr name="newcardcolor" format="color" />
+    </declare-styleable>
+</resources>

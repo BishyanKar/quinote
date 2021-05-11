@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Day/Light application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#D8D8D8</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchAutoCompleteTextView</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_cancel</item>
+        <item name="actionModeStyle">@style/Base.Widget.AppCompat.ActionMode.custom</item>
+
+        <item name="actionOverflowButtonStyle">@style/Overflow</item>
+
+        <item name="uicolor">#FA1E9602</item>
+        <item name="backgroundcolor">#FFFFFF</item>
+        <item name="editorcolor">#E7E6E6</item>
+        <item name="textcolor">#282929</item>
+        <item name="texthintcolor">#6F6E6E</item>
+        <item name="navitemcolor">#282929</item>
+        <item name="appbarcolor">#FFFFFF</item>
+        <item name="cardcolor">#E7E6E6</item>
+        <item name="reccolor">#D1D0D0</item>
+        <item name="dialogcolor">#fff</item>
+        <item name="iconcolor">#FF000000</item>
+        <item name="newcardcolor">#FFFFFF</item>
+
+        <!-- <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>-->
+
+
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#038365</item>
+        <item name="colorPrimaryDark">#FF060606</item>
+        <item name="colorAccent">#07A57E</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_cancel</item>
+        <item name="actionModeStyle">@style/Base.Widget.AppCompat.ActionMode.custom</item>
+
+        <item name="actionOverflowButtonStyle">@style/Overflow</item>
+
+        <item name="uicolor">#07A57E</item>
+        <item name="backgroundcolor">#121212</item>
+        <item name="editorcolor">#1B1B1B</item>
+        <item name="textcolor">#FFFFFF</item>
+        <item name="texthintcolor">#C9C7C7</item>
+        <item name="navitemcolor">#038365</item>
+        <item name="appbarcolor">#161616</item>
+        <item name="cardcolor">#1D1D1D </item>
+        <item name="reccolor">#363535</item>
+        <item name="dialogcolor">#363535</item>
+        <item name="iconcolor">#fff</item>
+        <item name="newcardcolor">#1D1D1D</item>
+        <!--  <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>-->
+
+    </style>
+
+    <style name="AppTheme.NoActionbar">
+
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+    </style>
+
+    <style name="DarkTheme.NoActionbar">
+
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+    </style>
+
+    <style name="DarkTheme.NoActionbar.Sub">
+
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">#1B1B1B</item>
+
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+    <style name="TextAppearance44">
+        <item name="android:textColor">#B6B6B6</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">#282929</item>
+    </style>
+    <style name="PopupMenu.Dark" parent="DarkTheme">
+        <item name="android:background">#272626</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+    <style name="PopupMenu" parent="AppTheme">
+        <item name="android:background">#fff</item>
+        <item name="android:textColor">#1A1919</item>
+    </style>
+    <style name="MaterialThemeDialog.Dark" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#363535</item>
+        <item name="android:textColor">#fff</item>
+        <item name="textColorAlertDialogListItem">#fff</item>
+        <item name="android:textColorSecondary">#fff</item>
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+    <style name="WrapToContentDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowMinWidthMajor">5dp</item>
+        <item name="windowMinWidthMinor">5dp</item>
+    </style>
+    <style name="PasswordThemeDialog.Dark" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#07A57E</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="PasswordThemeDialog.Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FA1E9602</item>
+    </style>
+    <style name="ColorPickerTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">?attr/textcolor</item>
+        <item name="android:textColorHint">?attr/texthintcolor</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.ActionMode.custom" parent="Base.Widget.AppCompat.ActionMode">
+        <item name="background">?attr/backgroundcolor</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title.custom</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.custom" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">?attr/textcolor</item>
+    </style>
+    <style name="Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_overflow_icon</item>
+    </style>
+    <!--<style name="customBarTextColor" parent="TextAppearance.AppCompat.Widget.ActionBar.Title" >
+        <item name="android:colorForeground">#161616</item>
+    </style>-->
+
+    <!--  <style name="DayNight" parent="Theme.AppCompat.DayNight.DarkActionBar">
+          <item name="colorPrimary">@color/colorPrimary</item>
+          <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+          <item name="colorAccent">@color/colorPrimary</item>
+      </style>
+      <style name="DayNight.NoActionBar">
+          <item name="windowActionBar">true</item>
+          <item name="windowNoTitle">true</item>
+          <item name="android:statusBarColor">@android:color/transparent</item>
+      </style>-->
+</resources>

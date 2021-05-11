@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_delete"
+        android:title="Delete"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_delete"
+        />
+    <item android:id="@+id/menu_pin"
+        android:title="pin"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_pin_icon"
+        />
+    <item android:id="@+id/menu_color"
+        android:title="Color"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_color_palette"
+        />
+    <item
+        android:id="@+id/menu_copy"
+        android:icon="@drawable/ic_copy_icon"
+        android:title="Copy"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_select_all"
+        android:title="Select All"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_select_all"
+        />
+    <item android:id="@+id/menu_share"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_share_icon"
+        />
+
+</menu>
